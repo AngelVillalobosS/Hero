@@ -1,28 +1,18 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hero - Trabajos Realizados</title>
     <link rel="stylesheet" href="../css/works_design.css">
 </head>
+
 <body>
 
     <!-- Encabezado -->
     <header>
-        <div class="navbar">
-            <a href="#" class="logo">HERO</a>
-            <nav>
-                <a href="#">Inicio</a>
-                <a href="#">Trabajos</a>
-                <a href="#">Nuestra Historia</a>
-                <a href="#">Contacto</a>
-            </nav>
-        </div>
-        <div class="hero-banner">
-            <h1>Trabajos Realizados</h1>
-            <p>Conoce algunos de los proyectos en los que hemos trabajado</p>
-        </div>
+        @include('components.navbar')
     </header>
 
     <!-- Sección de trabajos -->
@@ -57,4 +47,5 @@
     </footer>
 
 </body>
+
 </html>

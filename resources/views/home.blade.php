@@ -20,7 +20,6 @@
 
         <!-- Header -->
         <div id="header-wrapper">
-            <!-- Header -->
             <!-- Navbar componente -->
              <div class="container">
                 @include('components.navbar')
