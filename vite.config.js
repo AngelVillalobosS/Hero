@@ -1,5 +1,8 @@
 import { defineConfig } from 'vite';
 import laravel from 'laravel-vite-plugin';
+import dotenv from 'dotenv';
+
+dotenv.config(); // Cargar las variables de entorno
 
 export default defineConfig({
     plugins: [
@@ -9,4 +12,3 @@ export default defineConfig({
         }),
     ],
 });
- 
