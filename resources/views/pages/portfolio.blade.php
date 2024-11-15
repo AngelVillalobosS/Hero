@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hero - Trabajos Realizados</title>
-    <link rel="stylesheet" href="../css/works_design.css">
+    @vite(['resources/css/works_design.css'])
 </head>
 
 <body>
@@ -20,19 +20,19 @@
         <h2>Galería de Trabajos</h2>
         <div class="gallery">
             <div class="gallery-item">
-                <img src="trabajo1.jpg" alt="Trabajo 1">
+                <img src="{{ asset('../resources/images/pic01.jpg') }}" alt="Trabajo 1" class="item-image">
                 <p>Restauración completa de auto clásico</p>
             </div>
             <div class="gallery-item">
-                <img src="trabajo2.jpg" alt="Trabajo 2">
+                <img src="{{ asset('../resources/images/pic02.jpg') }}" alt="Trabajo 2" class="item-image">
                 <p>Pintura personalizada</p>
             </div>
             <div class="gallery-item">
-                <img src="trabajo3.jpg" alt="Trabajo 3">
+                <img src="{{ asset('../resources/images/pic03.jpg') }}" alt="Trabajo 3" class="item-image">
                 <p>Reparación de carrocería</p>
             </div>
             <div class="gallery-item">
-                <img src="trabajo4.jpg" alt="Trabajo 4">
+                <img src="{{ asset('../resources/images/pic04.jpg') }}" alt="Trabajo 4" class="item-image">
                 <p>Pulido y encerado</p>
             </div>
             <!-- Agrega más elementos según sea necesario -->
