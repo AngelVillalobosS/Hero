@@ -34,7 +34,7 @@
                             </ul>
                         </li>
                         <li><a href="left-sidebar.html">Agendar cita</a></li>
-                        <li><a href="right-sidebar.html">Galería de trabajos</a></li>
+                        <li><a href="{{ route('portfolio') }}">Galería de trabajos</a></li>
                         <li><a href="no-sidebar.html">Marcas</a></li>
                     </ul>
                 </nav>
