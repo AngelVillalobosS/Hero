@@ -11,7 +11,7 @@
 <body>
 
     <!-- Encabezado -->
-    <header>
+    <header class="container">
         @include('components.navbar')
     </header>
 
