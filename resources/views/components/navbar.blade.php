@@ -17,8 +17,10 @@
                 <!-- Nav -->
                 <nav id="nav">
                     <ul>
-                        <li class="current_page_item"><a href="{{ route('home') }}">Inicio</a></li>
-                        <li>
+                        <li class="{{ request()->routeIs('home') ? 'current_page_item' : '' }}">
+                            <a href="{{ route('home') }}">Inicio</a>
+                        </li>
+                        <li class="{{ request()->is('trabajos*') ? 'current_page_item' : '' }}">
                             <a href="#">Trabajos</a>
                             <ul>
                                 <li><a href="#">Pintura</a></li>
@@ -33,9 +35,15 @@
                                 </li>
                             </ul>
                         </li>
-                        <li><a href="left-sidebar.html">Agendar cita</a></li>
-                        <li><a href="{{ route('portfolio') }}">Galería de trabajos</a></li>
-                        <li><a href="no-sidebar.html">Marcas</a></li>
+                        <li class="{{ request()->is('left-sidebar') ? 'current_page_item' : '' }}">
+                            <a href="left-sidebar.html">Agendar cita</a>
+                        </li>
+                        <li class="{{ request()->routeIs('portfolio') ? 'current_page_item' : '' }}">
+                            <a href="{{ route('portfolio') }}">Galería de trabajos</a>
+                        </li>
+                        <li class="{{ request()->is('no-sidebar') ? 'current_page_item' : '' }}">
+                            <a href="no-sidebar.html">Marcas</a>
+                        </li>
                     </ul>
                 </nav>
             </div>

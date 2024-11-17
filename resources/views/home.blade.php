@@ -12,6 +12,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     @vite(['resources/css/main.css'])
     @vite(['resources/css/modal-styles.css'])
+    @vite(['resources/css/animations.css'])
+    @vite(['resources/js/scroll.js'])
     <!-- Estilos CSS -->
 </head>
 
@@ -93,7 +95,7 @@
                     <div id="workTeamModal" class="modal">
                         <div class="modal-content">
                             <span class="close" onclick="closeWorkTeam()">&times;</span>
-                            <img src="assets/images/conocenos.jpg" alt="Equipo de Trabajo" />
+                            <img src="{{ asset('../resources/images/conocenos.jpg') }}" alt="Equipo de Trabajo" />
                         </div>
                     </div>
 
@@ -172,7 +174,7 @@
 
                                     <!-- Excerpt -->
                                     <article class="box excerpt">
-                                        <a href="#" class="image left"><img src="assets/images/pic04.jpg" alt="Reparación de carrocería" /></a>
+                                        <a href="#" class="image left"><img src="{{ asset('../resources/images/pic04.jpg') }}" alt="Reparación de carrocería" /></a>
                                         <div>
                                             <header>
                                                 <span class="date">Octubre 5</span>
@@ -184,7 +186,7 @@
 
                                     <!-- Excerpt -->
                                     <article class="box excerpt">
-                                        <a href="#" class="image left"><img src="assets/images/pic05.jpg" alt="Reparación de carrocería" /></a>
+                                        <a href="#" class="image left"><img src="{{ asset('../resources/images/pic05.jpg') }}" alt="Reparación de carrocería" /></a>
                                         <div>
                                             <header>
                                                 <span class="date">Agosto 1</span>
@@ -196,7 +198,7 @@
 
                                     <!-- Excerpt -->
                                     <article class="box excerpt">
-                                        <a href="#" class="image left"><img src="assets/images/pic06.jpg" alt="Revisión de carrocería" /></a>
+                                        <a href="#" class="image left"><img src="{{ asset('../resources/images/pic06.jpg') }}" alt="Revisión de carrocería" /></a>
                                         <div>
                                             <header>
                                                 <span class="date">Julio 25</span>
@@ -215,7 +217,7 @@
                                 <section class="box spotlight">
                                     <h2 class="icon fa-file-alt">Sobre Nosotros</h2>
                                     <article>
-                                        <a href="#" class="image featured"><img src="assets/images/pic07.jpg" alt="Restauración de carrocería" /></a>
+                                        <a href="#" class="image featured"><img src="{{ asset('../resources/images/pic07.jpg') }}" alt="Restauración de carrocería" /></a>
                                         <header>
                                             <h3><a href="#">Un viaje lleno de pasión, compromiso y dedicación.</a></h3>
                                             <p>Restaura la esencia de tu automóvil con una pintura impecable.</p>
@@ -250,13 +252,13 @@
                                     <div class="col-12 col-12-small">
                                         <dl class="contact">
                                             <dt>Twitter</dt>
-                                            <dd><a href="#">@untitled-corp</a></dd>
+                                            <dd><a href="#">@heroZoDa</a></dd>
                                             <dt>Facebook</dt>
-                                            <dd><a href="#">facebook.com/untitled</a></dd>
+                                            <dd><a href="#">facebook.com/heroZoDa</a></dd>
                                             <dt>WWW</dt>
-                                            <dd><a href="#">untitled.tld</a></dd>
+                                            <dd><a href="#">Hero.com</a></dd>
                                             <dt>correo</dt>
-                                            <dd><a href="#">user@untitled.tld</a></dd>
+                                            <dd><a href="emailto:herozoda74@gmail.com">herozoda74@gmail.com</a></dd>
                                         </dl>
                                     </div>
                                     <div class="col-12 col-12-small">
@@ -268,7 +270,7 @@
                                                 USA
                                             </dd>
                                             <dt>teléfono</dt>
-                                            <dd>(000) 000-0000</dd>
+                                            <dd>(656) 215-8542</dd>
                                         </dl>
                                     </div>
                                 </div>
@@ -279,8 +281,8 @@
                     <div class="col-12">
                         <div id="copyright">
                             <ul class="menu">
-                                <li>&copy; Untitled. All rights reserved</li>
-                                <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                                <li>&copy; HeroZoda. All rights reserved</li>
+                                <li>Template by: <a href="http://html5up.net">HTML5 UP</a></li>
                             </ul>
                         </div>
                     </div>

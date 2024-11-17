@@ -184,3 +184,8 @@ Este error indica que Laravel está tratando de acceder a la tabla `sessions` en
    Asegúrate de que no haya problemas en otras configuraciones de conexión en el archivo `.env` (por ejemplo, que no esté utilizando otra base de datos).
 
 Si los pasos anteriores fueron realizados correctamente, el error debería solucionarse y Laravel debería poder acceder a la tabla `sessions`.
+
+## Aditional command
+```bash
+npm install dotenv
+```
