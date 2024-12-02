@@ -10,6 +10,7 @@
     <title>C&P | HERO</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
     @vite(['resources/css/main.css', 'resources/css/modal-styles.css', 'resources/css/animations.css'])
     @vite(['resources/js/scroll.js'])
     <!-- Estilos CSS -->
@@ -25,7 +26,7 @@
                 @include('components.navbar')
             </div>
             <!-- Banner -->
-            <div id="banner">
+            <div id="banner" class="slide-up">
                 <h2><strong>HERO |</strong> Carroceria y Pintura
                     <br />
                     "Tu auto nuevo, de nuevo"
@@ -75,7 +76,7 @@
                             <!-- Galería -->
                             <div class="col-4 col-12-medium">
                                 <section>
-                                    <a href="right-sidebar.html" class="image featured"><img src="{{ asset('../resources/images/pic_galery.jpg') }}" alt="Imagen de un auto derrapando en el desierto" /></a>
+                                    <a href="{{ route('portfolio') }}" class="image featured"><img src="{{ asset('../resources/images/pic_galery.jpg') }}" alt="Imagen de un auto derrapando en el desierto" /></a>
                                     <header class="second icon solid fa-chart-bar">
                                         <h3>Galería</h3>
                                         <p>Dale un vistazo a nuestro trabajo</p>
@@ -137,7 +138,7 @@
                                         <h2>Transformación y Estilo</h2>
                                         <p>Brindamos soluciones integrales para el cuidado de la carrocería y pintura de tu automóvil. </p>
                                     </header>
-                                    <p>Nuestro compromiso con la calidad y el detalle asegura que tu vehículo recupere su aspecto original o luzca aún mejor. Ya sea que necesites una reparación menor, un trabajo de pintura personalizado o una restauración completa, tenemos la experiencia y las herramientas necesarias para hacerlo.</p>
+                                    <p>Nuestro compromiso con la calidad y el detalle asegura que tu vehículo recupere su aspecto original o luzca aún mejor. Ya sea que necesites una reparación menor, un trabajo de pintura personalizado o una restauración completa.</p>
                                     <footer>
 
                                     </footer>
@@ -146,7 +147,7 @@
                             <div class="col-6 col-12-medium">
                                 <section>
                                     <header class="major">
-                                        <h2>Renueva tu vehículo con un toque de excelencia</h2>
+                                        <h2>Renueva tu vehículo </h2>
                                         <p>Deja que tu automóvil brille como nuevo con nuestro servicio especializado en carrocería y pintura.</p>
                                     </header>
                                     <p>Cada detalle importa, y nosotros nos encargamos de que tu vehículo luzca impecable, con acabados que perduran.</p>
@@ -172,7 +173,7 @@
 
                                     <!-- Excerpt -->
                                     <article class="box excerpt">
-                                        <a href="#" class="image left"><img src="{{ asset('../resources/images/pic04.jpg') }}" alt="Reparación de carrocería" /></a>
+                                        <a href="#" class="image left"><img src="{{ asset('../resources/images/restauracion.jpg') }}" alt="Reparación de carrocería" /></a>
                                         <div>
                                             <header>
                                                 <span class="date">Octubre 5</span>
@@ -184,7 +185,7 @@
 
                                     <!-- Excerpt -->
                                     <article class="box excerpt">
-                                        <a href="#" class="image left"><img src="{{ asset('../resources/images/pic05.jpg') }}" alt="Reparación de carrocería" /></a>
+                                        <a href="#" class="image left"><img src="{{ asset('../resources/images/accidente.png') }}" alt="Reparación de carrocería" /></a>
                                         <div>
                                             <header>
                                                 <span class="date">Agosto 1</span>
@@ -196,7 +197,7 @@
 
                                     <!-- Excerpt -->
                                     <article class="box excerpt">
-                                        <a href="#" class="image left"><img src="{{ asset('../resources/images/pic06.jpg') }}" alt="Revisión de carrocería" /></a>
+                                        <a href="#" class="image left"><img src="{{ asset('../resources/images/pintura.png') }}" alt="Revisión de carrocería" /></a>
                                         <div>
                                             <header>
                                                 <span class="date">Julio 25</span>

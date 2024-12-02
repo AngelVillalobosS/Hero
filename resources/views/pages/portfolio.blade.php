@@ -25,11 +25,11 @@
                 <p>Restauración completa de auto clásico</p>
             </div>
             <div class="gallery-item">
-                <img src="{{ asset('../resources/images/pic02.jpg') }}" alt="Trabajo 2" class="item-image">
+                <img src="{{ asset('../resources/images/personalizado.png') }}" alt="Trabajo 2" class="item-image">
                 <p>Pintura personalizada</p>
             </div>
             <div class="gallery-item">
-                <img src="{{ asset('../resources/images/pic03.jpg') }}" alt="Trabajo 3" class="item-image">
+                <img src="{{ asset('../resources/images/reparacion.jpg') }}" alt="Trabajo 3" class="item-image">
                 <p>Reparación de carrocería</p>
             </div>
             <div class="gallery-item">
