@@ -76,7 +76,7 @@
                             </header>
                             <div class="catalogo">
                                 <!-- Marca 1 -->
-                                <a href="https://www.sherwin-williams.com"  class="marca">
+                                <a href="https://www.sherwin-williams.com" target="_blank"  class="marca">
                                     <div>
                                         <img src="{{ asset('../resources/images/SWP.jpg') }}" alt="Sherwin William">
                                         <h3>Sherwin William</h3>
