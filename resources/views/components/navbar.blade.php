@@ -21,7 +21,7 @@
                             <a href="{{ route('home') }}">Inicio</a>
                         </li>
                         <li class="{{ request()->is('trabajos*') ? 'current_page_item' : '' }}">
-                            <a href="#">Trabajos</a>
+                            
                             <ul>
                                 <li><a href="#">Pintura</a></li>
                                 <li><a href="#">Ojalatería</a></li>

@@ -14,6 +14,16 @@
     @vite(['resources/css/main.css', 'resources/css/modal-styles.css', 'resources/css/animations.css'])
     @vite(['resources/js/scroll.js'])
     <!-- Estilos CSS -->
+    <style>
+    /* Estilo para las imágenes */
+    .container.box.feature1 .image.featured img {
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    height: 200px; /* Altura fija para uniformidad */
+    object-fit: cover; /* Recorta la imagen manteniendo la proporción */
+    border-radius: 8px; /* Opcional: bordes redondeados */
+}
+
+</style>
 </head>
 
 <body class="homepage is-preload">
@@ -216,15 +226,22 @@
                                 <section class="box spotlight">
                                     <h2 class="icon fa-file-alt">Sobre Nosotros</h2>
                                     <article>
-                                        <a href="#" class="image featured"><img src="{{ asset('../resources/images/pic07.jpg') }}" alt="Restauración de carrocería" /></a>
+                                        <a href="#" class="image featured"><img src="{{ asset('../resources/images/HeroLogopng.png') }}" alt="Restauración de carrocería" /></a>
                                         <header>
                                             <h3><a href="#">Un viaje lleno de pasión, compromiso y dedicación.</a></h3>
                                             <p>Restaura la esencia de tu automóvil con una pintura impecable.</p>
                                         </header>
                                         <p>En Hero, nos especializamos en la restauración de vehículos clásicos. Utilizamos técnicas avanzadas para devolverles a los autos su aspecto original, brindando un acabado de pintura que resalta y dura por muchos años. Cada proyecto es una obra maestra, trabajando con precisión y cuidado.</p>
-                                        <p>Desde la reparación de pequeños rasguños hasta la restauración completa de carrocería, nos aseguramos de que cada detalle sea perfeccionado para que tu automóvil luzca como nuevo.</p>
+
+                                        <!-- Texto adicional oculto -->
+                                        <div id="extra-text" style="display: none;">
+                                            <p>Desde la reparación de pequeños rasguños hasta la restauración completa de carrocería, nos aseguramos de que cada detalle sea perfeccionado para que tu automóvil luzca como nuevo.</p>
+                                            <p>Con años de experiencia y un equipo altamente capacitado, ofrecemos un servicio personalizado para cada cliente. Nos enorgullece entregar resultados que superan las expectativas.</p>
+                                        </div>
+
                                         <footer>
-                                            <a href="#" class="button alt icon solid fa-file-alt">Seguir Leyendo</a>
+                                            <!-- Botón para mostrar más texto -->
+                                            <button id="read-more-btn" class="button alt icon solid fa-file-alt">Seguir Leyendo</button>
                                         </footer>
                                     </article>
                                 </section>
@@ -329,6 +346,18 @@
                 closePrices();
             }
         }
+
+        // Lógica para mostrar/ocultar texto adicional
+    document.getElementById('read-more-btn').addEventListener('click', function () {
+        const extraText = document.getElementById('extra-text');
+        if (extraText.style.display === 'none') {
+            extraText.style.display = 'block';
+            this.textContent = 'Leer Menos'; // Cambia el texto del botón
+        } else {
+            extraText.style.display = 'none';
+            this.textContent = 'Seguir Leyendo';
+        }
+    });
     </script>
 
 </body>
