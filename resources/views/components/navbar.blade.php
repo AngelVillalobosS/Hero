@@ -4,8 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    @vite(['resources/css/main.css'])
-    @vite(['resources/css/modal-styles.css'])
+    @vite(['../resources/css/main.css', '../resources/css/modal-styles.css', '../resources/css/animations.css'])
 </head>
 
 <body>
@@ -35,13 +34,13 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="{{ request()->is('left-sidebar') ? 'current_page_item' : '' }}">
+                        <li class="{{ request()->routeIs('left-sidebar') ? 'current_page_item' : '' }}">
                             <a href="left-sidebar.html">Agendar cita</a>
                         </li>
                         <li class="{{ request()->routeIs('portfolio') ? 'current_page_item' : '' }}">
                             <a href="{{ route('portfolio') }}">Galería de trabajos</a>
                         </li>
-                        <li class="{{ request()->is('no-sidebar') ? 'current_page_item' : '' }}">
+                        <li class="{{ request()->routeIs('brandsView') ? 'current_page_item' : '' }}">
                             <a href="{{ route('brandsView') }}">Marcas</a>
                         </li>
                     </ul>

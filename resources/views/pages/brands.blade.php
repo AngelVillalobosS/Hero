@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
-	@vite([''])
+	@vite(['../resources/css/main.css', '../resources/css/modal-styles.css', '../resources/css/animations.css'])
     <style>
     /* Estilos personalizados para el catálogo */
     .catalogo {
@@ -54,8 +54,11 @@
 </head>
 
 <body class="no-sidebar is-preload">
-    @include('components.navbar')
-
+<div id="header-wrapper">
+        <header class="container">
+            @include('components.navbar')
+        </header>
+    </div>
     <!-- Main Wrapper -->
     <div id="main-wrapper">
         <div class="wrapper style2">

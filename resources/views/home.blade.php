@@ -10,9 +10,7 @@
     <title>C&P | HERO</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    @vite(['resources/css/main.css'])
-    @vite(['resources/css/modal-styles.css'])
-    @vite(['resources/css/animations.css'])
+    @vite(['resources/css/main.css', 'resources/css/modal-styles.css', 'resources/css/animations.css'])
     @vite(['resources/js/scroll.js'])
     <!-- Estilos CSS -->
 </head>
