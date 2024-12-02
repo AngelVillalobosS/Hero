@@ -17,13 +17,16 @@
     <style>
     /* Estilo para las imágenes */
     .container.box.feature1 .image.featured img {
-    width: 100%; /* Ocupa todo el ancho del contenedor */
-    height: 200px; /* Altura fija para uniformidad */
-    object-fit: cover; /* Recorta la imagen manteniendo la proporción */
-    border-radius: 8px; /* Opcional: bordes redondeados */
-}
-
-</style>
+        width: 100%;
+        /* Ocupa todo el ancho del contenedor */
+        height: 200px;
+        /* Altura fija para uniformidad */
+        object-fit: cover;
+        /* Recorta la imagen manteniendo la proporción */
+        border-radius: 8px;
+        /* Opcional: bordes redondeados */
+    }
+    </style>
 </head>
 
 <body class="homepage is-preload">
@@ -32,7 +35,7 @@
         <!-- Header -->
         <div id="header-wrapper">
             <!-- Navbar componente -->
-             <div class="container">
+            <div class="container">
                 @include('components.navbar')
             </div>
             <!-- Banner -->
@@ -64,7 +67,9 @@
                             <!-- Equipo de Trabajo -->
                             <div class="col-4 col-12-medium">
                                 <section>
-                                    <a href="#" class="image featured" onclick="showWorkTeam(event)"><img src="{{ asset('../resources/images/pic_workteam.jpg') }}" alt="Imagen de un equipo de trabajo mecanico " /></a>
+                                    <a href="#" class="image featured" onclick="showWorkTeam(event)"><img
+                                            src="{{ asset('../resources/images/pic_workteam.jpg') }}"
+                                            alt="Imagen de un equipo de trabajo mecanico " /></a>
                                     <header class="second icon solid fa-user">
                                         <h3>Equipo de Trabajo</h3>
                                         <p>Conócenos!!</p>
@@ -75,7 +80,9 @@
                             <!-- Nuestros Precios -->
                             <div class="col-4 col-12-medium">
                                 <section>
-                                    <a href="#" class="image featured" onclick="showPrices(event)"><img src="{{ asset('../resources/images/pic_prices.jpeg') }}" alt="Imagen de un billete de 500 pesos mexicanos" /></a>
+                                    <a href="#" class="image featured" onclick="showPrices(event)"><img
+                                            src="{{ asset('../resources/images/pic_prices.jpeg') }}"
+                                            alt="Imagen de un billete de 500 pesos mexicanos" /></a>
                                     <header class="second icon solid fa-cog">
                                         <h3>Nuestros Precios</h3>
                                         <p>¡Checa nuestros costos!</p>
@@ -86,7 +93,9 @@
                             <!-- Galería -->
                             <div class="col-4 col-12-medium">
                                 <section>
-                                    <a href="{{ route('portfolio') }}" class="image featured"><img src="{{ asset('../resources/images/pic_galery.jpg') }}" alt="Imagen de un auto derrapando en el desierto" /></a>
+                                    <a href="{{ route('portfolio') }}" class="image featured"><img
+                                            src="{{ asset('../resources/images/pic_galery.jpg') }}"
+                                            alt="Imagen de un auto derrapando en el desierto" /></a>
                                     <header class="second icon solid fa-chart-bar">
                                         <h3>Galería</h3>
                                         <p>Dale un vistazo a nuestro trabajo</p>
@@ -95,7 +104,8 @@
                             </div>
 
                             <div class="col-12">
-                                <p>Conoce a nuestro equipo de trabajo, descubre nuestros precios y visita nuestros trabajos más relevantes.</p>
+                                <p>Conoce a nuestro equipo de trabajo, descubre nuestros precios y visita nuestros
+                                    trabajos más relevantes.</p>
                             </div>
                         </div>
                     </section>
@@ -146,9 +156,12 @@
                                 <section>
                                     <header class="major">
                                         <h2>Transformación y Estilo</h2>
-                                        <p>Brindamos soluciones integrales para el cuidado de la carrocería y pintura de tu automóvil. </p>
+                                        <p>Brindamos soluciones integrales para el cuidado de la carrocería y pintura de
+                                            tu automóvil. </p>
                                     </header>
-                                    <p>Nuestro compromiso con la calidad y el detalle asegura que tu vehículo recupere su aspecto original o luzca aún mejor. Ya sea que necesites una reparación menor, un trabajo de pintura personalizado o una restauración completa.</p>
+                                    <p>Nuestro compromiso con la calidad y el detalle asegura que tu vehículo recupere
+                                        su aspecto original o luzca aún mejor. Ya sea que necesites una reparación
+                                        menor, un trabajo de pintura personalizado o una restauración completa.</p>
                                     <footer>
 
                                     </footer>
@@ -158,9 +171,11 @@
                                 <section>
                                     <header class="major">
                                         <h2>Renueva tu vehículo </h2>
-                                        <p>Deja que tu automóvil brille como nuevo con nuestro servicio especializado en carrocería y pintura.</p>
+                                        <p>Deja que tu automóvil brille como nuevo con nuestro servicio especializado en
+                                            carrocería y pintura.</p>
                                     </header>
-                                    <p>Cada detalle importa, y nosotros nos encargamos de que tu vehículo luzca impecable, con acabados que perduran.</p>
+                                    <p>Cada detalle importa, y nosotros nos encargamos de que tu vehículo luzca
+                                        impecable, con acabados que perduran.</p>
                                     <footer>
 
                                     </footer>
@@ -183,37 +198,52 @@
 
                                     <!-- Excerpt -->
                                     <article class="box excerpt">
-                                        <a href="#" class="image left"><img src="{{ asset('../resources/images/restauracion.jpg') }}" alt="Reparación de carrocería" /></a>
+                                        <a href="#" class="image left"><img
+                                                src="{{ asset('../resources/images/restauracion.jpg') }}"
+                                                alt="Reparación de carrocería" /></a>
                                         <div>
                                             <header>
                                                 <span class="date">Octubre 5</span>
                                                 <h3><a href="#">Restauración de pintura y detalles finos</a></h3>
                                             </header>
-                                            <p>Recientemente completamos un proyecto donde restauramos la pintura original de un vehículo clásico, devolviéndole su brillo y detalles impecables. Usamos técnicas avanzadas para asegurar que cada capa de pintura se aplicara con precisión.</p>
+                                            <p>Recientemente completamos un proyecto donde restauramos la pintura
+                                                original de un vehículo clásico, devolviéndole su brillo y detalles
+                                                impecables. Usamos técnicas avanzadas para asegurar que cada capa de
+                                                pintura se aplicara con precisión.</p>
                                         </div>
                                     </article>
 
                                     <!-- Excerpt -->
                                     <article class="box excerpt">
-                                        <a href="#" class="image left"><img src="{{ asset('../resources/images/accidente.png') }}" alt="Reparación de carrocería" /></a>
+                                        <a href="#" class="image left"><img
+                                                src="{{ asset('../resources/images/accidente.png') }}"
+                                                alt="Reparación de carrocería" /></a>
                                         <div>
                                             <header>
                                                 <span class="date">Agosto 1</span>
                                                 <h3><a href="#">Reparación de daños por impacto</a></h3>
                                             </header>
-                                            <p>En este proyecto, nos encargamos de reparar los daños causados por un impacto en la carrocería de un automóvil. Utilizamos herramientas de última generación para alinear las partes afectadas y restaurar su forma original.</p>
+                                            <p>En este proyecto, nos encargamos de reparar los daños causados por un
+                                                impacto en la carrocería de un automóvil. Utilizamos herramientas de
+                                                última generación para alinear las partes afectadas y restaurar su forma
+                                                original.</p>
                                         </div>
                                     </article>
 
                                     <!-- Excerpt -->
                                     <article class="box excerpt">
-                                        <a href="#" class="image left"><img src="{{ asset('../resources/images/pintura.png') }}" alt="Revisión de carrocería" /></a>
+                                        <a href="#" class="image left"><img
+                                                src="{{ asset('../resources/images/pintura.png') }}"
+                                                alt="Revisión de carrocería" /></a>
                                         <div>
                                             <header>
                                                 <span class="date">Julio 25</span>
                                                 <h3><a href="#">Servicio de revisión de carrocería y pintura</a></h3>
                                             </header>
-                                            <p>En Hero, ofrecemos revisiones detalladas de carrocería y pintura para garantizar que tu vehículo mantenga un excelente estado. Nuestros expertos inspeccionan minuciosamente cada área y proporcionan soluciones para cualquier desperfecto.</p>
+                                            <p>En Hero, ofrecemos revisiones detalladas de carrocería y pintura para
+                                                garantizar que tu vehículo mantenga un excelente estado. Nuestros
+                                                expertos inspeccionan minuciosamente cada área y proporcionan soluciones
+                                                para cualquier desperfecto.</p>
                                         </div>
                                     </article>
 
@@ -226,22 +256,33 @@
                                 <section class="box spotlight">
                                     <h2 class="icon fa-file-alt">Sobre Nosotros</h2>
                                     <article>
-                                        <a href="#" class="image featured"><img src="{{ asset('../resources/images/HeroLogopng.png') }}" alt="Restauración de carrocería" /></a>
+                                        <a href="#" class="image featured"><img
+                                                src="{{ asset('../resources/images/HeroLogopng.png') }}"
+                                                alt="Restauración de carrocería" /></a>
                                         <header>
                                             <h3><a href="#">Un viaje lleno de pasión, compromiso y dedicación.</a></h3>
                                             <p>Restaura la esencia de tu automóvil con una pintura impecable.</p>
                                         </header>
-                                        <p>En Hero, nos especializamos en la restauración de vehículos clásicos. Utilizamos técnicas avanzadas para devolverles a los autos su aspecto original, brindando un acabado de pintura que resalta y dura por muchos años. Cada proyecto es una obra maestra, trabajando con precisión y cuidado.</p>
+                                        <p>En Hero, nos especializamos en la restauración de vehículos clásicos.
+                                            Utilizamos técnicas avanzadas para devolverles a los autos su aspecto
+                                            original, brindando un acabado de pintura que resalta y dura por muchos
+                                            años. Cada proyecto es una obra maestra, trabajando con precisión y cuidado.
+                                        </p>
 
                                         <!-- Texto adicional oculto -->
                                         <div id="extra-text" style="display: none;">
-                                            <p>Desde la reparación de pequeños rasguños hasta la restauración completa de carrocería, nos aseguramos de que cada detalle sea perfeccionado para que tu automóvil luzca como nuevo.</p>
-                                            <p>Con años de experiencia y un equipo altamente capacitado, ofrecemos un servicio personalizado para cada cliente. Nos enorgullece entregar resultados que superan las expectativas.</p>
+                                            <p>Desde la reparación de pequeños rasguños hasta la restauración completa
+                                                de carrocería, nos aseguramos de que cada detalle sea perfeccionado para
+                                                que tu automóvil luzca como nuevo.</p>
+                                            <p>Con años de experiencia y un equipo altamente capacitado, ofrecemos un
+                                                servicio personalizado para cada cliente. Nos enorgullece entregar
+                                                resultados que superan las expectativas.</p>
                                         </div>
 
                                         <footer>
                                             <!-- Botón para mostrar más texto -->
-                                            <button id="read-more-btn" class="button alt icon solid fa-file-alt">Seguir Leyendo</button>
+                                            <button id="read-more-btn" class="button alt icon solid fa-file-alt">Seguir
+                                                Leyendo</button>
                                         </footer>
                                     </article>
                                 </section>
@@ -252,59 +293,7 @@
             </div>
         </div>
 
-        <!-- Footer Wrapper -->
-        <div id="footer-wrapper">
-            <footer id="footer" class="container">
-                <div class="row">
-                    <div class="col-3 col-6-medium col-12-small">
-
-
-
-                        <!-- Contact -->
-                        <section>
-                            <h2>contactanos</h2>
-                            <div>
-                                <div class="row">
-                                    <div class="col-12 col-12-small">
-                                        <dl class="contact">
-                                            <dt>Twitter</dt>
-                                            <dd><a href="#">@heroZoDa</a></dd>
-                                            <dt>Facebook</dt>
-                                            <dd><a href="#">facebook.com/heroZoDa</a></dd>
-                                            <dt>WWW</dt>
-                                            <dd><a href="#">Hero.com</a></dd>
-                                            <dt>correo</dt>
-                                            <dd><a href="emailto:herozoda74@gmail.com">herozoda74@gmail.com</a></dd>
-                                        </dl>
-                                    </div>
-                                    <div class="col-12 col-12-small">
-                                        <dl class="contact">
-                                            <dt>Dirección</dt>
-                                            <dd>
-                                                1234 Fictional Rd<br />
-                                                Nashville, TN 00000-0000<br />
-                                                USA
-                                            </dd>
-                                            <dt>teléfono</dt>
-                                            <dd>(656) 215-8542</dd>
-                                        </dl>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-
-                    </div>
-                    <div class="col-12">
-                        <div id="copyright">
-                            <ul class="menu">
-                                <li>&copy; HeroZoda. All rights reserved</li>
-                                <li>Template by: <a href="http://html5up.net">HTML5 UP</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </footer>
-        </div>
+        @include('components.pageFooter')
 
     </div>
 
@@ -317,38 +306,38 @@
     <script src="assets/js/main.js"></script>
     <!-- Scripts JavaScript -->
     <script>
-        // Función para mostrar la ventana del equipo de trabajo
-        function showWorkTeam() {
-            document.getElementById("workTeamModal").style.display = "block";
-        }
+    // Función para mostrar la ventana del equipo de trabajo
+    function showWorkTeam() {
+        document.getElementById("workTeamModal").style.display = "block";
+    }
 
-        // Función para cerrar la ventana del equipo de trabajo
-        function closeWorkTeam() {
-            document.getElementById("workTeamModal").style.display = "none";
-        }
+    // Función para cerrar la ventana del equipo de trabajo
+    function closeWorkTeam() {
+        document.getElementById("workTeamModal").style.display = "none";
+    }
 
-        // Función para mostrar la ventana de precios
-        function showPrices() {
-            document.getElementById("pricesModal").style.display = "block";
-        }
+    // Función para mostrar la ventana de precios
+    function showPrices() {
+        document.getElementById("pricesModal").style.display = "block";
+    }
 
-        // Función para cerrar la ventana de precios
-        function closePrices() {
-            document.getElementById("pricesModal").style.display = "none";
-        }
+    // Función para cerrar la ventana de precios
+    function closePrices() {
+        document.getElementById("pricesModal").style.display = "none";
+    }
 
-        // Cerrar las ventanas si el usuario hace clic fuera de ellas
-        window.onclick = function(event) {
-            if (event.target == document.getElementById("workTeamModal")) {
-                closeWorkTeam();
-            }
-            if (event.target == document.getElementById("pricesModal")) {
-                closePrices();
-            }
+    // Cerrar las ventanas si el usuario hace clic fuera de ellas
+    window.onclick = function(event) {
+        if (event.target == document.getElementById("workTeamModal")) {
+            closeWorkTeam();
         }
+        if (event.target == document.getElementById("pricesModal")) {
+            closePrices();
+        }
+    }
 
-        // Lógica para mostrar/ocultar texto adicional
-    document.getElementById('read-more-btn').addEventListener('click', function () {
+    // Lógica para mostrar/ocultar texto adicional
+    document.getElementById('read-more-btn').addEventListener('click', function() {
         const extraText = document.getElementById('extra-text');
         if (extraText.style.display === 'none') {
             extraText.style.display = 'block';
