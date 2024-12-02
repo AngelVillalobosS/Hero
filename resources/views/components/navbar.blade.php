@@ -42,7 +42,7 @@
                             <a href="{{ route('portfolio') }}">Galería de trabajos</a>
                         </li>
                         <li class="{{ request()->is('no-sidebar') ? 'current_page_item' : '' }}">
-                            <a href="no-sidebar.html">Marcas</a>
+                            <a href="{{ route('brandsView') }}">Marcas</a>
                         </li>
                     </ul>
                 </nav>
