@@ -257,8 +257,9 @@ input, select, textarea {
 
 		.row.aln-left {
 			justify-content: flex-start;
+			border:#fff solid 2px; 
 		}
-
+		
 		.row.aln-center {
 			justify-content: center;
 		}
@@ -324,7 +325,15 @@ input, select, textarea {
 		}
 
 		.row > .col-6 {
-			width: 50%;
+			width: 100%;
+			/* border: red solid 4px; */
+		}
+		.row > .footer-rightside{
+			display: block;
+			position: absolute;
+			align-content: flex-end;
+			/* border: #51ff00 solid 2px; */
+			width: 98.026%;
 		}
 
 		.row > .off-6 {
