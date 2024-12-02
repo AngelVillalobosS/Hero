@@ -65,10 +65,12 @@
                             <div class="col-4 col-12-medium">
                                 <section>
                                     <a href="#" class="image featured" onclick="showWorkTeam(event)"><img src="{{ asset('../resources/images/pic_workteam.jpg') }}" alt="Imagen de un equipo de trabajo mecanico " /></a>
-                                    <header class="second icon solid fa-user">
+                                    <a href="#" onclick="showWorkTeam(event)">
+                                        <header class="second icon solid fa-user">
                                         <h3>Equipo de Trabajo</h3>
                                         <p>Conócenos!!</p>
                                     </header>
+                                </a>
                                 </section>
                             </div>
 
@@ -76,9 +78,11 @@
                             <div class="col-4 col-12-medium">
                                 <section>
                                     <a href="#" class="image featured" onclick="showPrices(event)"><img src="{{ asset('../resources/images/pic_prices.jpeg') }}" alt="Imagen de un billete de 500 pesos mexicanos" /></a>
-                                    <header class="second icon solid fa-cog">
+                                    <a href="#" onclick="showPrices(event)">
+                                        <header class="second icon solid fa-cog">
                                         <h3>Nuestros Precios</h3>
                                         <p>¡Checa nuestros costos!</p>
+                                    </a>
                                     </header>
                                 </section>
                             </div>
@@ -87,10 +91,12 @@
                             <div class="col-4 col-12-medium">
                                 <section>
                                     <a href="{{ route('portfolio') }}" class="image featured"><img src="{{ asset('../resources/images/pic_galery.jpg') }}" alt="Imagen de un auto derrapando en el desierto" /></a>
-                                    <header class="second icon solid fa-chart-bar">
+                                    <a href="{{ route('portfolio') }}">
+                                        <header class="second icon solid fa-chart-bar">
                                         <h3>Galería</h3>
                                         <p>Dale un vistazo a nuestro trabajo</p>
-                                    </header>
+                                        </header>
+                                    </a>
                                 </section>
                             </div>
 
@@ -281,9 +287,7 @@
                                         <dl class="contact">
                                             <dt>Dirección</dt>
                                             <dd>
-                                                1234 Fictional Rd<br />
-                                                Nashville, TN 00000-0000<br />
-                                                USA
+                                                CALLE FRANCISCO CALDERON 3635. COL. MELCHOR OCAMPLO, CIUDAD JUAREZ, CHIHUAHUA, MÉXICO
                                             </dd>
                                             <dt>teléfono</dt>
                                             <dd>(656) 215-8542</dd>
