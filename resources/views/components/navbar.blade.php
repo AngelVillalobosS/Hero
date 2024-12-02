@@ -34,8 +34,8 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="{{ request()->routeIs('left-sidebar') ? 'current_page_item' : '' }}">
-                            <a href="left-sidebar.html">Agendar cita</a>
+                        <li class="{{ request()->routeIs('formularioView') ? 'current_page_item' : '' }}">
+                            <a href="{{ route('formularioView')}}">Agendar cita</a>
                         </li>
                         <li class="{{ request()->routeIs('portfolio') ? 'current_page_item' : '' }}">
                             <a href="{{ route('portfolio') }}">Galería de trabajos</a>

@@ -9,6 +9,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('home',[homeController::class,'homeView'])->name('home');
-Route::get('portfolio',[portfolioController::class,'portfolioView'])->name('portfolio');
+Route::get('/inicio',[homeController::class,'homeView'])->name('home');
+Route::get('/galeria-trabajos',[portfolioController::class,'portfolioView'])->name('portfolio');
 Route::get('/marcas', [viewsController::class, 'brandsView'])->name('brandsView');
+Route::get('/agendar-cita', [viewsController::class, 'formularieView'])->name('formularioView');
